@@ -1,0 +1,84 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.caption h3 {
+  font-size: 16px;
+}
+
+.caption span {
+  color: var(--main-color);
+}
+
+.image {
+  position: relative;
+  height: 268px;
+  overflow: hidden;
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image button svg {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  height: 18px;
+  width: 18px;
+}
+
+.default {
+  fill: transparent;
+  stroke: var(--light-gray-color);
+}
+
+.like {
+  fill: var(--main-color);
+  stroke: var(--main-color);
+}
+
+.card ul {
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .card ul {
+    margin-bottom: 28px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .card ul {
+    min-height: 60px;
+    margin-bottom: 16px;
+  }
+}
+
+.card li {
+  display: inline;
+  padding: 2px;
+  color: var(--subtext-color);
+  font-size: 12px;
+}
+
+.card li:not(:last-child)::after {
+  content: " ｜";
+  color: var(--gray-color);
+}
+
+.card button {
+  width: 100%;
+  padding: 12px 20px;
+}

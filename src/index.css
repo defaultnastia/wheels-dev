@@ -1,0 +1,117 @@
+@import "modern-normalize/modern-normalize.css";
+
+@font-face {
+  font-family: Manrope;
+  src: url("./fonts/Manrope/Manrope-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url("./fonts/Manrope/Manrope-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url("./fonts/Manrope/Manrope-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --white-color: #fff;
+  --light-gray-color: #f7f7fb;
+  --gray-color: #f9f9f9;
+  --dark-gray-color: #8a8a89;
+  --backdrop-color: #12141780;
+  --main-dark-color: #0b44cd;
+  --main-color: #3470ff;
+  --subtext-color: #12141786;
+  --black-color: #121417;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  color: var(--light-gray-color);
+  background-color: var(--main-color);
+  border-radius: 12px;
+  padding: 12px 50px;
+  text-align: center;
+  transition: background-color 0.15s ease-in;
+
+  &:hover {
+    background-color: var(--main-dark-color);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a.active {
+  border: 1px solid var(--light-gray-color);
+  border-radius: 8px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  background-color: var(--white-color);
+  font-family: Manrope, sans-serif;
+}
+
+.container {
+  min-width: 360px;
+  max-width: 390px;
+  margin: auto;
+  padding: 0 8px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 20px 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.emptyStateText {
+  text-align: center;
+}
+
+.cta {
+  color: var(--light-gray-color);
+  background-color: var(--main-color);
+  border-radius: 12px;
+  padding: 12px 50px;
+  text-align: center;
+  transition: background-color 0.15s ease-in;
+  font-size: 14px;
+  font-weight: 500;
+
+  &:hover {
+    background-color: var(--main-dark-color);
+  }
+}

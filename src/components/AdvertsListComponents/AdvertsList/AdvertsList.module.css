@@ -1,0 +1,38 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .list {
+    row-gap: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 29px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .list {
+    justify-content: flex-start;
+  }
+}
+
+.list > li {
+  width: 320px;
+}
+
+@media only screen and (min-width: 768px) {
+  .list > li {
+    width: 340px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .list > li {
+    width: 280px;
+  }
+}

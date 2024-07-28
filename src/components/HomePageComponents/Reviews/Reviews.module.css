@@ -1,0 +1,15 @@
+.swiper {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.infoMessage {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.callText {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
